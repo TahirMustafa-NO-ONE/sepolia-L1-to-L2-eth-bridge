@@ -19,7 +19,7 @@ async function main() {
     l2SignerOrProvider: l2Provider,
   })
 
-  const amount = ethers.utils.parseEther(AMOUNT_ETH || '2.5')
+  const amount = ethers.utils.parseEther(AMOUNT_ETH || '0.5')
   console.log(`Depositing ${ethers.utils.formatEther(amount)} ETH from Sepolia → OP Sepolia...`)
 
   const tx = await messenger.depositETH(amount)
